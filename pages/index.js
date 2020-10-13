@@ -8,15 +8,13 @@ export default function Home(props) {
   }
   //hier wird der Cookie erstellt
   return (
-    <>
-      <div>
-        <button onClick={createCookie}>Press me to create cookie</button>
-        <p>
-          Pls refresh after Pressing the button to see the cookie render:
-          {props.beginnerCookie}
-        </p>
-      </div>
-    </>
+    <div>
+      <button onClick={createCookie}>Press me to create cookie</button>
+      <p>
+        Pls refresh after Pressing the button to see the cookie render:
+        {props.beginnerCookie}
+      </p>
+    </div>
   );
 }
 //hier wird der Cookie mit {props.beginnerCookie} gecallt
